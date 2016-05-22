@@ -1,6 +1,6 @@
 /*******************************************************
  * 
- * Arduino Wheele Auto Pilot for Scanmar 33
+ * Arduino Wheel Auto Pilot for Scanmar 33
  * David Skogan, September 2013 - September 2015
  * 
  ********************************************************/
@@ -762,8 +762,8 @@ void stear() {
       motorTime++;
     }
   }
-    // Safety - stop motor  if we have run the motor for more than 10 seconds
-  if ( motorTime > 100 ) { 
+    // Safety - stop motor  if we have run the motor for more than 50 seconds
+  if ( motorTime > 500 ) { 
     
     motorOff();
     motorTime = 0;
